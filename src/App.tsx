@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className='container mx-auto max-w-6xl p-8 min-h-screen'>
-      <div className='flex flex-col items-center justify-center text-fontColor space-y-10 mb-10'>
+      <div className='flex flex-col items-center justify-center text-[#FFEE6F] space-y-10 mb-10'>
         <h1 className='text-4xl capitalize'>word-finding</h1>
         <form>
           <label htmlFor='word-input' className='mr-4 text-xl'>
@@ -64,12 +64,12 @@ function App() {
         </form>
       </div>
       {isloading ? (
-        <h2 className='text-fontColor text-center'>Loading ...</h2>
+        <h2 className='text-[#FFEE6F] text-center'>Loading ...</h2>
       ) : (
         returnedWords.map((item) => (
           <ul key={crypto.randomUUID()} className='text-left mx-auto max-w-sm'>
             <li
-              className='text-fontColor mb-2'
+              className='text-[#FFEE6F] mb-2'
               onDoubleClick={() => setKeyword(item.word)}
             >
               {item.word}
